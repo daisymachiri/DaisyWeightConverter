@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <label for="originalWeight">Enter Weight:</label>
+            <input type="number" id="originalWeight" placeholder="Enter weight...">
+            <select id="originalUnit">
+                <option value="kg">Kilograms (kg)</option>
+                <option value="g">Grams (g)</option>
+                <option value="lbs">Pounds (lbs)</option>
+                <option value="oz">Ounces (oz)</option>
+            </select>
+        </div>
+        <label for="decimalPrecision">Decimal Precision:</label>
+        <input type="number" id="decimalPrecision" min="0" max="10" value="2">
+
+        <button id="convertBtn">Convert</button>
+        <button id="clearBtn">Clear</button>
+
+        <div class="output-section">
+            <p>Converted Weight:</p>
+            <span id="convertedWeight">0</span>
+            <select id="convertedUnit">
+                <option value="kg">Kilograms (kg)</option>
+                <option value="g">Grams (g)</option>
+                <option value="lbs">Pounds (lbs)</option>
+                <option value="oz">Ounces (oz)</option>
+            </select>
+        </div>
+        <div class="error-section">
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+</body>
+</html>
